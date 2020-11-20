@@ -1,0 +1,88 @@
+body {
+    background-color: #000;
+}
+
+.hint {
+    font-family: sans-serif;
+    font-weight: 100;
+
+    position: absolute;
+    /* top: 20px; */
+    right: 20px;
+    left: 20px;
+    
+    display: flex;
+    
+    height: 100px;
+    padding: 4em;
+    /* background-color: #fff8; */
+    align-items: center;
+}
+
+@media screen and (max-height: 550px) {
+    .hint {
+        bottom: initial;
+        top: 20px;
+        transition: top 2s, bottom 2s, transform 2s; 
+    }
+}
+@media screen and (min-height: 550px) and (max-height: 650px)  {
+    .hint {
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+        /* transition: top 2s, bottom 2s, transform 2s;  */
+        transition: height 3s, width 3s, transform 3s; 
+        /* transition: all 2s; */
+    }
+}
+@media screen and (min-height: 650px) {
+    .hint {
+        top: initial;
+        bottom: 20px;
+        transition: height 3s, width 3s, transform 3s; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hint {
+      background-color: red;
+      transition: height 3s, width 3s, transform 3s; 
+    }
+  }
+@media screen and (min-width: 600px) and (max-width: 650px) {
+    .hint {
+      background-color: orange;
+      transition: color 3s;
+    }
+  }
+  @media screen and (min-width: 650px) and (max-width: 700px) {
+    .hint {
+      background-color: yellow;
+      transition: background-color 3s;
+    }
+  }
+  @media screen and (min-width: 700px) and (max-width: 750px) {
+    .hint {
+      background-color: green;
+      transition: background-color 3s;
+    }
+  }
+  @media screen and (min-width: 750px) and (max-width: 800px) {
+    .hint {
+      background-color: blue;
+      transition: background-color 3s;
+    }
+  }
+  @media screen and (min-width: 800px) and (max-width: 850px) {
+    .hint {
+      background-color: indigo;
+      transition: background-color 3s;
+    }
+  }
+  @media screen and (min-width: 850px) {
+    .hint {
+      background-color: purple;
+      transition: background-color 3s;
+    }
+  }
