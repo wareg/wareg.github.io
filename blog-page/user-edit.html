@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="common-style.css">
+
+    <title>Edit Profile</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h3 class="centered"><a class="nav-link" href="./home.html">Back to Home</a></h3>
+    <h2 class="centered">Edit User Profile</h2>   
+    <form class="user-edit user-frm">
+        <div class="image-frame">
+            <label for="firstName">First Name</label>
+            <input type="text" placeholder="First Name" id="firstName">
+            <label for="lastName">Last Name</label>
+            <input type="text" placeholder="Last Name" id="lastName">
+            <img id="profile-pic" src="./img/profile-pic.png" alt="">
+            <label class="pic-label" for="upload">Upload profile picture</label>
+            <input type="button" id="upload" value="Upload">
+        </div>
+
+        <div  class="frm-container">
+            <label for="userName">UserName</label>
+            <input type="text" placeholder="Username" id="userName">
+            <label for="pass">Password</label>
+            <input type="password" placeholder="Password" id="pass">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" id="email">
+            <label for="phone">Phone</label>
+            <input type="text" placeholder="Phone" id="phone">
+            <input type="button" value="Submit">
+        </div>    
+    </form>
+</body>
+</html>

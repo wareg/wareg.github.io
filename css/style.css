@@ -1,0 +1,268 @@
+/*
+
+write your code here
+
+*/
+
+/*-------TASK LIST 2-7--------------------------*/
+/*2a*/
+.row:nth-child(1) > div:hover,
+.row:nth-child(2) > div:hover,
+.row:nth-child(3) > div:hover {
+  color: #76cdd8;
+}
+
+/*2b*/
+.tm-card:nth-child(1):hover::after,
+.tm-card:nth-child(3):hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 5rem solid #76cdd8;
+  border-left: 5rem solid transparent;
+}
+
+/*2b*/
+.tm-card:nth-child(2):hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 5rem solid #76cdd8;
+  border-right: 5rem solid transparent;
+}
+
+/*3*/
+.row:nth-child(2) a:hover {
+  background-color: rgb(118, 205, 216);
+}
+
+/*4, 5b, 6 or a*/
+.row:nth-child(3) .img-fluid:hover,
+.row:nth-child(4) .img-fluid:hover,
+.row:nth-child(5) .img-fluid:hover {
+  transform: scale(1.2);
+}
+
+/*5a*/
+.row:nth-child(4) a:hover {
+  background-color: rgb(118, 205, 216);
+}
+
+/*6a or b*/
+.row:nth-child(5) > div:nth-child(2) > div > div:hover {
+  border-color: #24d4d4;
+  box-shadow: 0 0 0 0.2rem #24d4d4;
+}
+
+.tm-pricing-discount__star {
+  color: red;
+}
+
+.tm-pricing-discount__text {
+  color: #24d4d4;
+}
+
+.tm-pricing-table a:hover + .tm-pricing-discount {
+  display: block;
+}
+
+.row:nth-child(5) a:hover {
+  background-color: rgb(118, 205, 216);
+}
+
+/*7a not 6a*/
+.row:nth-child(6) *:focus {
+  border-color: #24d4d4;
+  box-shadow: 0 0 0 0.2rem #24d4d4;
+}
+
+/*7b not 6b*/
+.row:nth-child(6) button:hover {
+  background-color: rgb(118, 205, 216);
+}
+
+/*-----NOT STRICT TASK LIST---------------------*/
+
+.row:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+/* .row:nth-child(1) > div:first-child div, */
+.container > section:nth-child(1) > div:first-child > div,
+.row:nth-child(2) > div:first-child div {
+  background-color: #76cdd8;
+}
+
+.row:nth-child(2) h2,
+.row:nth-child(3) h2,
+.row:nth-child(4) h2 {
+  color: #76cdd8;
+}
+
+/* .row:nth-child(3) a, */
+.row:nth-child(2) .btn,
+.row:nth-child(3) .btn,
+.row:nth-child(4) .btn {
+  background-color: #119898;
+}
+
+.tm-pricing-header,
+.tm-pricing-body a {
+  background-color: #119898;
+}
+
+.tm-pricing-table {
+  border: 1px solid #119898;
+}
+
+.row:nth-child(6) > div:first-child {
+  background-color: #76cdd8;
+}
+
+.row:nth-child(6) > div:nth-child(2) button {
+  background-color: #119898;
+}
+.row:nth-child(6) > div:last-child {
+  background-color: #119898;
+}
+
+a,
+button {
+  border: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row:nth-child(6) > div:nth-child(2) form {
+  transform: scale(1.2);
+  z-index: 99;
+}
+
+/*----TASK 1 - PRINT PREVIEW-----------------------------*/
+
+@media print {
+  html {
+    font-size: 10.5px;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .row > div {
+    width: 50%;
+  }
+
+  .tm-section,
+  .tm-section-min-h {
+    min-height: 25rem;
+  }
+
+  .rounded-circle {
+    height: 19rem;
+    width: 19rem;
+  }
+
+  .row:nth-child(2) a,
+  .row:nth-child(4) a {
+    float: right;
+  }
+
+  .row:nth-child(3),
+  .row:nth-child(4) {
+    page-break-after: always;
+  }
+
+  .row:nth-child(4) > div:first-child {
+    width: 47rem;
+  }
+
+  .row:nth-child(3) p,
+  .row:nth-child(4) p {
+    font-size: 1.35rem;
+  }
+
+  .row:nth-child(4) > div:last-child {
+    float: right;
+    width: 21rem;
+    height: 33rem;
+  }
+
+  .row:nth-child(5) > div {
+    width: 33%;
+  }
+
+  .tm-feature-list {
+    font-size: 1.1rem;
+    padding: 2rem 2.8rem;
+  }
+
+  .row:nth-child(6) > div:first-child,
+  .row:nth-child(6) > div:last-child {
+    width: 100%;
+  }
+  .row:nth-child(6) > div:first-child {
+    height: 3.5rem;
+  }
+  .row:nth-child(6) {
+    position: relative;
+    background-color: #f4f4f4;
+  }
+
+  .row:nth-child(6) > div:nth-child(2) {
+    top: -1.5rem;
+    left: 15%;
+    width: 70%;
+    /* height: 300px !important; */
+    background-color: white;
+    z-index: 100;
+  }
+
+  .row:nth-child(6) > div:nth-child(2) > form {
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  select {
+    font-size: 1.2rem;
+  }
+
+  .row:nth-child(6) > div:last-child {
+    position: absolute;
+    top: 430px;
+    height: 15.5rem;
+    /* bottom: 0; */
+  }
+
+  .row:nth-child(6) > div:last-child > div {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .row:nth-child(6) > div:last-child {
+    height: 5rem;
+  }
+
+  .row:nth-child(6) > div:last-child > div > div:first-child {
+    left: 7rem;
+  }
+  .row:nth-child(6) > div:last-child > div > div:last-child {
+    left: 15rem;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .container > .row:last-child {
+    position: absolute;
+    width: 100%;
+    bottom: -16rem;
+  }
+}
