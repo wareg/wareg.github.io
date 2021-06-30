@@ -1,20 +1,15 @@
-/*
-
-write your code here
-
-*/
+a {
+  border-radius: 20px !important;
+}
 
 /*-------TASK LIST 2-7--------------------------*/
 /*2a*/
-.row:nth-child(1) > div:hover,
-.row:nth-child(2) > div:hover,
-.row:nth-child(3) > div:hover {
+.row > div:hover {
   color: #76cdd8;
 }
 
 /*2b*/
-.tm-card:nth-child(1):hover::after,
-.tm-card:nth-child(3):hover::after {
+.tm-card:nth-child(odd):hover::after {
   content: "";
   position: absolute;
   top: 0;
@@ -26,7 +21,7 @@ write your code here
 }
 
 /*2b*/
-.tm-card:nth-child(2):hover::after {
+.tm-card:nth-child(even):hover::after {
   content: "";
   position: absolute;
   top: 0;
@@ -38,7 +33,7 @@ write your code here
 }
 
 /*3*/
-.row:nth-child(2) a:hover {
+.row a:hover {
   background-color: rgb(118, 205, 216);
 }
 
@@ -89,7 +84,7 @@ write your code here
 
 /*-----NOT STRICT TASK LIST---------------------*/
 
-.row:nth-child(2) {
+.row:nth-child(even) {
   flex-direction: row-reverse;
 }
 
@@ -99,16 +94,11 @@ write your code here
   background-color: #76cdd8;
 }
 
-.row:nth-child(2) h2,
-.row:nth-child(3) h2,
-.row:nth-child(4) h2 {
+.row h2 {
   color: #76cdd8;
 }
 
-/* .row:nth-child(3) a, */
-.row:nth-child(2) .btn,
-.row:nth-child(3) .btn,
-.row:nth-child(4) .btn {
+.row .btn {
   background-color: #119898;
 }
 
@@ -265,4 +255,18 @@ a {
     width: 100%;
     bottom: -16rem;
   }
+}
+
+.mypic {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pic01 {
+  background-image: url("../img/prj_choco30.jpg");
+}
+
+.pic02 {
+  background-image: url("../img/prj_menhely.jpg ");
 }

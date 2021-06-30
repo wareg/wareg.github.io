@@ -3,6 +3,7 @@ body {
   font-size: 18px;
   color: #666666;
   background-color: #f4f4f4;
+  background-color: #e0e0e0;
 }
 
 p,
@@ -211,11 +212,4 @@ h2 {
   background-image: url("../img/prj_choco30.jpg");
   background-position: center;
   background-size: cover;
-}
-
-.pic01 {
-  background-image: url("../img/prj_choco30.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
 }
