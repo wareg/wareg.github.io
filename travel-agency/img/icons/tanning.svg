@@ -1,0 +1,26 @@
+<svg width="100mm" height="100mm" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-.003687 .004342)">
+  <g transform="matrix(2 0 0 -2 100 50)">
+   <g transform="matrix(1.526 0 0 1.52 -1094 -10510)">
+    <g transform="translate(716.5 6909)">
+     <path d="m0 0h-23l-9.117 9.113 1.414 1.414 8.531-8.527h22.17z" fill="#f96400"/>
+    </g>
+    <g transform="translate(691.2 6902)">
+     <path d="m0 0-1.832.803 3.008 6.869 1.832-.803z" fill="#f96400"/>
+    </g>
+    <g transform="translate(710.4 6902)">
+     <path d="m0 0-2.283 6.869 1.898.631 2.283-6.869z" fill="#f96400"/>
+    </g>
+    <g transform="translate(696.5 6923)">
+     <path d="m0 0-1.187 1.609 3.562 2.631 1.188-1.609z" fill="#f96400"/>
+    </g>
+    <g transform="translate(702.6 6919)">
+     <path d="m0 0-1.832.801 1.771 4.058 1.832-.8z" fill="#f96400"/>
+    </g>
+    <g transform="translate(707.9 6918)">
+     <path d="m0 0-.496 4.398 1.988.225.496-4.398z" fill="#f96400"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
