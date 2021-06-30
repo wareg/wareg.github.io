@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pacman Reloaded</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./game.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="title"><h1>PacMan Reloaded</h1></div>
+
+    <div id="board">
+        <div id="pacman">
+            <img id="pacImg" src="./img/pacman.png" alt="">
+        </div>
+
+        <div id="block" class="block"></div>
+
+        <div id="gameOver">
+            <p>GAME OVER</p>
+        </div>
+
+        <div id="uWon">
+            <p> CONGRATS, CHAMP!</p>
+        </div>
+
+        <!-- <div id="food" class="food"></div> -->
+    </div>
+
+    <div id="panel">
+        <button id="start">START</button>
+        TIME LEFT: <div id="time">0:30</div>
+        SCORE: <div id="score">0</div>
+        LEVEL: <div id="level">1</div>
+        <button id="sound">SOUND ON</button>
+    </div>
+
+</body>
+
+</html>

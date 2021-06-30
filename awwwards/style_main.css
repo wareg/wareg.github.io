@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Gotham_Book";
+  src: url("./fonts/GothamSSm-Book_Web-e9b954c1acc4c263bbf89aa0dc8d10a0.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gotham_Medium";
+  src: url("./fonts/GothamSSm-Medium_Web-d2d6a40637da36a51e9f226810b565db.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gotham_Bold";
+  src: url("./fonts/GothamSSm-Bold_Web-c23a630ddcff179d6e9fc9452af2f3ee.woff2") format("woff2");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #BCDCE6;
+  line-height: 1;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 7rem;
+}
+
+header a {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+header svg {
+  margin-left: 1.4rem;
+  height: 7rem;
+}
+
+header #impact-div {
+  margin-right: 9.5em;
+  margin-top: 3.5rem;
+  font-family: "Gotham_Medium";
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.page-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+.page-div h1 {
+  width: 95%;
+  margin-top: 2rem;
+  font-family: "Gotham_Medium";
+  font-size: 4rem;
+  font-weight: 500;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.page-div h1 span {
+  font-family: Noto Serif,Georgia,Cambria,Times New Roman,Times,serif;
+  font-style: italic;
+}
+
+.page-div p {
+  width: 57%;
+  margin-top: 0.4rem;
+  margin-bottom: 5rem;
+  font-family: "Gotham_Book";
+  font-size: 1.25rem;
+  line-height: 1.2;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.page-div .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  height: 5rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Gotham_Medium";
+  border: 2px solid black;
+  border-radius: 3rem;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.page-div .button-container .page-button {
+  width: 60%;
+  margin: auto;
+  line-height: 1.4;
+}
+
+.animated {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.15;
+  }
+  66% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.15;
+  }
+  66% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style_main.css.map */

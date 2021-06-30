@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url("./img/game_bg.jpg") no-repeat;
+  background-size: cover;
+  font-family: "Press Start 2P";
+}
+
+body #title {
+  display: inline-block;
+  position: absolute;
+  top: 100px;
+  width: 300px;
+  height: 100px;
+  margin-left: 3vw;
+  z-index: 100;
+  line-height: 50px;
+}
+
+body #title h1 {
+  font-size: 36px;
+}
+
+body #board {
+  width: 603px;
+  height: 603px;
+  border: black solid 3px;
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+  margin-left: calc(50vw - 320px);
+  background-image: radial-gradient(circle at 1px 1px, #b6b5b5 2px, white 0);
+  background-size: 25px 25px;
+  z-index: -100;
+}
+
+body #board #pacman {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+body #board #pacman img {
+  width: 100%;
+  height: 100%;
+}
+
+body #board .food {
+  width: 15px;
+  height: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  background-color: #d6460d;
+  border-radius: 50%;
+  z-index: -99;
+}
+
+body #board .block {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  color: gainsboro;
+}
+
+body #board #gameOver {
+  text-align: center;
+  color: #d6460d;
+  line-height: 120px;
+  margin-top: 180px;
+  visibility: hidden;
+}
+
+body #board #gameOver p {
+  font-size: 100px;
+}
+
+body #board #uWon {
+  text-align: center;
+  color: #78d60d;
+  line-height: 120px;
+  margin-top: -220px;
+  visibility: hidden;
+}
+
+body #board #uWon p {
+  font-size: 65px;
+}
+
+body #panel {
+  position: absolute;
+  display: inline-block;
+  width: 120px;
+  top: 50px;
+  margin-left: calc(10vw - 50px);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 16px;
+}
+
+body #panel #time, body #panel #score, body #panel #level {
+  background-color: white;
+  border: 3px solid black;
+  margin-bottom: 15px;
+  padding: 5px;
+  font-size: 22px;
+  text-align: center;
+}
+
+body #panel #sound, body #panel #start {
+  font-family: "Press Start 2P";
+  line-height: 18px;
+  height: 50px;
+  width: 80%;
+  margin-bottom: 15px;
+  border: 3px solid black;
+  background-color: gainsboro;
+}
+
+body #panel #sound:hover, body #panel #start:hover {
+  background-color: gold;
+}
+/*# sourceMappingURL=style.css.map */

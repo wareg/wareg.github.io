@@ -111,17 +111,6 @@ a {
   border: 1px solid #119898;
 }
 
-.row:nth-child(6) > div:first-child {
-  background-color: #76cdd8;
-}
-
-.row:nth-child(6) > div:nth-child(2) button {
-  background-color: #119898;
-}
-.row:nth-child(6) > div:last-child {
-  background-color: #119898;
-}
-
 a,
 button {
   border: none !important;
@@ -277,4 +266,12 @@ a {
 
 .pic04 {
   background-image: url("../img/prj_pizza.jpg");
+}
+
+.pic05 {
+  background-image: url("../img/prj_pacman.jpg");
+}
+
+.pic06 {
+  background-image: url("../img/prj_awwwards.jpg");
 }
