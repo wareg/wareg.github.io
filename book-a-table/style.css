@@ -1,0 +1,97 @@
+.page-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+#carte {
+  height: 1.4em;
+  text-align: center;
+  font-family: "La Belle Aurore";
+  font-size: 5em;
+}
+
+.pizza-menu-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 70em;
+  margin: auto;
+}
+
+.menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin: 0.5em;
+  -webkit-box-shadow: 0 0 1em #A67C36;
+          box-shadow: 0 0 1em #A67C36;
+}
+
+.menu-item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 15em;
+}
+
+.menu-item .menu-item-text {
+  width: 15em;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#A67C36), to(#f1e5ce));
+  background-image: linear-gradient(to top, #A67C36, #f1e5ce);
+  color: #f1e5ce;
+  opacity: 0.75;
+}
+
+.menu-item .menu-item-text:hover {
+  opacity: 1;
+}
+
+.menu-item .menu-item-text p:first-child {
+  font-weight: 900;
+  font-size: 1.7em;
+  color: #A67C36;
+}
+
+.menu-item .menu-item-text p:nth-child(2) {
+  font-style: italic;
+  color: black;
+}
+
+.menu-item .menu-item-text p:last-child {
+  font-weight: 500;
+}
+
+.menu-item .menu-item-text p {
+  margin: 1em;
+}
+
+.reservation {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 4em auto 3em;
+}
+
+.reservation input[type="submit"] {
+  padding: .5em 1.5em;
+  background-color: #A67C36;
+  color: #f1e5ce;
+  font-family: 'Roboto Slab';
+  font-size: 20px;
+  border-radius: 2em;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.reservation input[type="submit"]:hover {
+  background-color: #f1e5ce;
+  color: #A67C36;
+}
+/*# sourceMappingURL=style.css.map */

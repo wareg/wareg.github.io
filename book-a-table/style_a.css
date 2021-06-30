@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background: url("./img/bg.jpg") no-repeat 0/cover;
+  font-family: 'Roboto Slab';
+  color: white;
+}
+
+.hamburger-menu {
+  height: 25px;
+  position: fixed;
+  top: 0;
+  width: 85%;
+  background-color: #A67C36;
+  color: #f1e5ce;
+}
+
+.hamburger-menu input {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.welcome-div {
+  background-image: url("./img/pizza.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding-top: 25px;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome-div h1 {
+  width: 100%;
+  padding-top: 8vh;
+  font-family: "La Belle Aurore";
+  font-size: 10vh;
+  line-height: 15vh;
+  background-color: #0000004b;
+  text-align: center;
+}
+
+@media screen and (max-width: 845px) {
+  .welcome-div h1 {
+    line-height: 10vh;
+    font-size: 11vw;
+  }
+}
+
+.welcome-div #logo {
+  padding-top: 12vh;
+  width: 25vh;
+}
+
+@media screen and (max-width: 845px) {
+  .welcome-div #logo {
+    width: 40vw;
+  }
+}
+
+.intro-div {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .social {
+  font-family: "La Belle Aurore";
+  font-size: 26px;
+  text-align: center;
+  color: white;
+}
+
+footer .fab {
+  margin: 10px 5px;
+  height: 25px;
+  width: 25px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #A67C36;
+  color: #f1e5ce;
+  border-radius: 50%;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+footer .fab:hover {
+  background-color: #f1e5ce;
+  color: #A67C36;
+}
+
+footer .copyright {
+  margin-top: 9vh;
+  height: 25px;
+  width: 100%;
+  background-color: #A67C36;
+  color: #f1e5ce;
+  text-align: center;
+}
+/*# sourceMappingURL=style_a.css.map */
