@@ -268,5 +268,13 @@ a {
 }
 
 .pic02 {
-  background-image: url("../img/prj_menhely.jpg ");
+  background-image: url("../img/prj_menhely.jpg");
+}
+
+.pic03 {
+  background-image: url("../img/prj_travel.jpg");
+}
+
+.pic04 {
+  background-image: url("../img/prj_pizza.jpg");
 }
